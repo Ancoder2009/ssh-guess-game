@@ -14,5 +14,5 @@ $ go build .
 
 ## Run with docker
 ```sh
-$ docker run ghcr.io/ancoder2009/ssh-guess-game:latest
+$ docker run -d -p 12345:12345 -v "~/.ssh:/app/.ssh" ghcr.io/ancoder2009/ssh-guess-game:latest
 ```
