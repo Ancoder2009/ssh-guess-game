@@ -1,3 +1,5 @@
+![Screenshot](docs/screenshot.png)
+
 # SSH Guess game
 
 Guess a number from 1 to 1 Million
