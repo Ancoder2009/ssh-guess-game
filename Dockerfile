@@ -1,5 +1,5 @@
 # BUILD
-FROM golang:1.22-alpine AS builder
+FROM golang:1.27.2-alpine3.24 AS builder
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ COPY . .
 RUN GOOS=linux go build -o main .
 
 # RUN
-FROM alpine:3.19
+FROM alpine:3.24
 
 RUN adduser -D appuser
 USER appuser
