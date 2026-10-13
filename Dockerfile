@@ -20,6 +20,6 @@ WORKDIR /app
 
 COPY --from=builder /app/main .
 
-EXPOSE 12345
+VOLUME ["/app/.ssh"]
 
 CMD ["./main"]
