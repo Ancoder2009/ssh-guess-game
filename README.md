@@ -11,3 +11,8 @@ $ ssh domain
 ```sh
 $ go build .
 ```
+
+## Run with docker
+```sh
+$ docker run ghcr.io/ancoder2009/ssh-guess-game:latest
+```
